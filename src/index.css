@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary */
+
+/* Linear gradient (active input border) */
+--color-Primero: #6448fe;
+--color-Segundo: #600594;
+--color-RedInputErrors: #ff5252;
+
+/* Neutral */
+
+- White: #ffffff;
+--color-LightGrayishViolet: #dedddf;
+--color-DarkGrayishViolet: #8e8593;
+--color-VeryDarkViolet: #21092f;
+
+/* font */
+
+--font-display: "Space Grotesk", sans-serif;
+
+}
