@@ -9,6 +9,7 @@ type FormularioCardProps = {
   setCardYear: React.Dispatch<React.SetStateAction<string>>;
   setCardCVC: React.Dispatch<React.SetStateAction<string>>;
   isOk: boolean;
+  setIsOk: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 function FormularioCard({
@@ -32,7 +33,7 @@ function FormularioCard({
       }, 3000);
       return () => clearTimeout(timer);
     }
-  }, [isOk]);
+  }, [isOk, setCardName, setCardNumb, setCardMes, setCardYear, setCardCVC]);
 
   return (
     <section className="flex flex-col p-5 gap-2 mt-20">
