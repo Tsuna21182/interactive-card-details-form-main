@@ -8,8 +8,6 @@ type FormularioCardProps = {
   setCardMes: React.Dispatch<React.SetStateAction<string>>;
   setCardYear: React.Dispatch<React.SetStateAction<string>>;
   setCardCVC: React.Dispatch<React.SetStateAction<string>>;
-  isOk: boolean;
-  setIsOk: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 function FormularioCard({
