@@ -5,7 +5,7 @@ type BtnProps = {
 function Btn({ setIsOk }: BtnProps) {
   return (
     <button
-      className="bg-VeryDarkViolet transform hover:translate-0.5 duration-300 text-White rounded-lg p-3 mt-5 cursor-pointer"
+      className="bg-VeryDarkViolet transform hover:translate-0.5 duration-300 text-White rounded-lg p-3 mt-5 cursor-pointer md:text-2xl"
       onClick={() => setIsOk(true)}
     >
       Confirm

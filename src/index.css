@@ -18,4 +18,10 @@
   /* font */
 
   --font-display: "Space Grotesk", sans-serif;
+
+  /* break point */
+
+  --breakpoint-xs: 24.563rem;
+  --breakpoint-xxs: 25.75rem;
+  --breakpoint-sxs: 23.438rem;
 }

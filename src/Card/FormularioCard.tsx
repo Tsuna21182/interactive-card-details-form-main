@@ -34,60 +34,60 @@ function FormularioCard({
   }, [isOk, setCardName, setCardNumb, setCardMes, setCardYear, setCardCVC]);
 
   return (
-    <section className="flex flex-col p-5 gap-2 mt-20">
+    <section className="flex flex-col p-5 gap-2 mt-20 md:mt-40">
       {isOk ? (
         <Added />
       ) : (
         <form className="flex flex-col p-5 gap-2">
-          <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest">
+          <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl">
             Cardholder name
           </label>
           <input
             type="text"
             placeholder="e.g Jane Appleseed"
-            className="p-2 border-1 border-LightGrayishViolet rounded-lg"
+            className="p-2 border-1 border-LightGrayishViolet rounded-lg md:text-xl md:p-5"
             onChange={(e) => setCardName(e.target.value)}
           />
-          <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest">
+          <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl">
             Card number
           </label>
           <input
             type="number"
             placeholder="e.g. 1234 5678 9123 0000"
-            className="p-2 border-1 border-LightGrayishViolet rounded-lg"
+            className="p-2 border-1 border-LightGrayishViolet rounded-lg md:text-xl md:p-5"
             onChange={(e) => setCardNumb(e.target.value)}
           />
           <section className="grid grid-cols-4 gap-2">
             <div className="flex flex-col gap-2">
-              <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest">
+              <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl">
                 exp. date
               </label>
               <input
                 type="number"
                 placeholder="MM"
-                className="p-2 border-1 border-LightGrayishViolet rounded-lg"
+                className="p-2 border-1 border-LightGrayishViolet rounded-lg md:text-xl md:p-5"
                 onChange={(e) => setCardMes(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest">
+              <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl">
                 (mm/yy)
               </label>
               <input
                 type="number"
                 placeholder="YY"
-                className="p-2 border-1 border-LightGrayishViolet rounded-lg"
+                className="p-2 border-1 border-LightGrayishViolet rounded-lg md:text-xl md:p-5"
                 onChange={(e) => setCardYear(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-2 col-span-2">
-              <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest">
+              <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl">
                 cvc
               </label>
               <input
                 type="number"
                 placeholder="e.g. 123"
-                className="p-2 border-1 border-LightGrayishViolet rounded-lg"
+                className="p-2 border-1 border-LightGrayishViolet rounded-lg md:text-xl md:p-5"
                 onChange={(e) => setCardCVC(e.target.value)}
               />
             </div>
