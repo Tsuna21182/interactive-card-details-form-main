@@ -34,12 +34,12 @@ function FormularioCard({
   }, [isOk, setCardName, setCardNumb, setCardMes, setCardYear, setCardCVC]);
 
   return (
-    <section className="flex flex-col p-5 gap-2 mt-20 md:mt-40">
+    <section className="flex flex-col p-5 gap-2 mt-20 md:mt-40 lg:p-10 xxl:pr-40 3xl:pr-96">
       {isOk ? (
         <Added />
       ) : (
-        <form className="flex flex-col p-5 gap-2">
-          <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl">
+        <form className="flex flex-col p-5 gap-2 lg:gap-5">
+          <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl lg:text-xl">
             Cardholder name
           </label>
           <input
@@ -48,7 +48,7 @@ function FormularioCard({
             className="p-2 border-1 border-LightGrayishViolet rounded-lg md:text-xl md:p-5"
             onChange={(e) => setCardName(e.target.value)}
           />
-          <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl">
+          <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl lg:text-xl">
             Card number
           </label>
           <input
@@ -59,7 +59,7 @@ function FormularioCard({
           />
           <section className="grid grid-cols-4 gap-2">
             <div className="flex flex-col gap-2">
-              <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl">
+              <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl lg:text-sm">
                 exp. date
               </label>
               <input
@@ -70,7 +70,7 @@ function FormularioCard({
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl">
+              <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl lg:text-sm">
                 (mm/yy)
               </label>
               <input
@@ -81,7 +81,7 @@ function FormularioCard({
               />
             </div>
             <div className="flex flex-col gap-2 col-span-2">
-              <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl">
+              <label className="uppercase text-VeryDarkViolet text-xs font-semibold tracking-widest md:text-2xl lg:text-sm">
                 cvc
               </label>
               <input

@@ -21,7 +21,11 @@
 
   /* break point */
 
+  --breakpoint-2sm: 22.5rem;
   --breakpoint-xs: 24.563rem;
   --breakpoint-xxs: 25.75rem;
   --breakpoint-sxs: 23.438rem;
+  --breakpoint-xxl: 90rem;
+  --breakpoint-3xl: 120rem;
+  --breakpoint-2md: 56.25rem;
 }

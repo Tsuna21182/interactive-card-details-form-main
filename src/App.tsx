@@ -19,20 +19,22 @@ function App() {
 
   return (
     <>
-      <Card
-        cardName={cardName}
-        cardNumb={cardNumb}
-        cardMes={cardMes}
-        cardYear={cardYear}
-        cardCVC={cardCVC}
-      />
-      <FormularioCard
-        setCardName={setCardName}
-        setCardNumb={setCardNumb}
-        setCardMes={setCardMes}
-        setCardYear={setCardYear}
-        setCardCVC={setCardCVC}
-      />
+      <div className="lg:grid lg:grid-cols-2 lg:gap-20 xxl:gap-0 ">
+        <Card
+          cardName={cardName}
+          cardNumb={cardNumb}
+          cardMes={cardMes}
+          cardYear={cardYear}
+          cardCVC={cardCVC}
+        />
+        <FormularioCard
+          setCardName={setCardName}
+          setCardNumb={setCardNumb}
+          setCardMes={setCardMes}
+          setCardYear={setCardYear}
+          setCardCVC={setCardCVC}
+        />
+      </div>
     </>
   );
 }
